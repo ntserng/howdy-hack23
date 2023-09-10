@@ -1,9 +1,19 @@
-.center {
+.center1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
     width: 50%;
+    border: solid;
+    border-width: 10px;
+}
+
+.center2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 40%;
     border: solid;
     border-width: 10px;
 }
@@ -54,20 +64,21 @@
     text-align: center;
   }
   
-  button {
+  .button {
       margin-top: 50px;
-      background-color: rgba(255,255,255,0.3);
-      border: 3px solid #F04A49;
+      background-color: rgb(255, 255, 255);
+      border: 3px solid #000000;
       color: #F04A49;
-      font-size: 25px;
-      padding: 10px 20px;
+      font-size: 20px;
+      padding: 10px 5px;
+      border-radius: 50%;
       
   }
   
-  button:hover {
-      background-color: #F04A49;
+  .button:hover {
+      background-color: #11b2f2;
       color: #FFF;
-      border: 3px solid #F04A49;
+      border: 3px solid #000000;
       transition: all 0.3s ease 0s;
   }
   
@@ -104,4 +115,26 @@
   .dropdown-content a:hover {
     color: #FFFFFF;
     background-color: #00A4BD;
+  }
+
+  .location-button {
+    margin-top: 50px;
+    background-color: rgba(255,255,255,0.3);
+    border: 3px solid #000000;
+    color: #ffffff;
+    font-size: 25px;
+    padding: 10px 20px;
+    
+}
+
+#img-container {
+    border: solid rgb(0, 0, 0) 3px;
+    display: inline-block;
+    position: relative;
+  }
+  
+  #img-container button {
+    position: absolute;
+    top: 50px;
+    left: 50px;
   }

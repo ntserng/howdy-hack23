@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html style="background-color: maroon;">
+<html style="background-color: maroon">
   <!-- IMPORT STUFF AND SET TITLE HERE-->
   <head>
     <title>Howdy Hydrate</title>
@@ -12,21 +12,28 @@
 
   <!-- ANYTHING HERE SHOWS UP ON THE WEBSITE -->
   <body>
-    <div class="dropdown" style = "position:fixed; left:110px; top:0px;">
+    <div class="dropdown" style="position: fixed; left: 110px; top: 0px">
       <button class="location-button">Locations</button>
       <div class="dropdown-content">
-      <a href="index.html">MSC Floor 1</a>
-      <a href="index2.html">MSC Floor 2</a>
+        <a href="index.html">MSC Floor 1</a>
+        <a href="index2.html">MSC Floor 2</a>
       </div>
     </div>
     <image
       src="https://cdn.discordapp.com/attachments/1150154889108922559/1150154992846643271/MSC_firstfloormeetings.png"
-      class="center"
+      class="center1"
     >
     </image>
-    <div style = "position:fixed; left:400px; top:400px;">
-      <button class="button" href="#" onclick="show('popup')"><image class="water" src="water.png"></image></button>
-        <!-- <image src="water.png"></image> -->
+    <div style="position: fixed; left: 600px; top: 375px">
+      <button
+        class="button"
+        id="img-container"
+        href="#"
+        onclick="show('popup')"
+      >
+        <image class="water" src="water.png"></image>
+      </button>
+      <!-- <image src="water.png"></image> -->
       <!-- This is what will be included inside the popup -->
       <div class="popup" id="popup">
         <p>Water Fountain</p>
@@ -38,14 +45,14 @@
 </html>
 
 <script>
-  $ = function(id) {
+  $ = function (id) {
     return document.getElementById(id);
-  }
+  };
 
-  var show = function(id) {
-	  $(id).style.display ='block';
-  }
-    var hide = function(id) {
-	  $(id).style.display ='none';
-  }
-  </script>
+  var show = function (id) {
+    $(id).style.display = "block";
+  };
+  var hide = function (id) {
+    $(id).style.display = "none";
+  };
+</script>
