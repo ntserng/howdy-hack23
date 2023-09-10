@@ -19,37 +19,88 @@
         <a href="index2.html">MSC Floor 2</a>
       </div>
     </div>
-    <div>
-      <image
-        src="https://cdn.discordapp.com/attachments/1150154889108922559/1150154992846643271/MSC_firstfloormeetings.png"
-        class="center1"
+     <div>
+    <image
+      src="https://cdn.discordapp.com/attachments/1150154889108922559/1150154992846643271/MSC_firstfloormeetings.png"
+      class="center1"
+    >
+    </image>
+    <div style="position: fixed; left: 50%; top: 67%">
+      <button
+        class="button"
+        id="img-container"
+        href="#"
+        onclick="show('popup1')"
       >
-      </image>
-      <div style="position: fixed; left: 50%; top: 50%">
-        <button
-          class="button"
-          id="img-container"
-          href="#"
-          onclick="show('popup')"
-        >
-          <image class="water" src="water.png"></image>
-        </button>
-        <!-- <image src="water.png"></image> -->
-        <!-- This is what will be included inside the popup -->
+        <image class="water" src="water.png"></image>
+      </button>
+      <!-- <image src="water.png"></image> -->
+      <!-- This is what will be included inside the popup -->
+    </div>
+    <div style="position: fixed; left: 65%; top: 18%">
+      <button
+        class="button"
+        id="button2"
+        href="#"
+        onclick="show('popup2')"
+      >
+        <image class="water" src="water.png"></image>
+      </button>
+      <!-- <image src="water.png"></image> -->
+      <!-- This is what will be included inside the popup -->
+    </div>
+    <div style="position: fixed; left: 27%; top: 65%">
+      <button
+        class="button"
+        id="button3"
+        href="#"
+        onclick="show('popup3')"
+      >
+        <image class="water" src="water.png"></image>
+      </button>
+      <!-- <image src="water.png"></image> -->
+      <!-- This is what will be included inside the popup -->
+    </div>
+    <div>
+      
+      <div class="popup" id="popup1">
+        <a class="close" id="closePopup" href="#" onclick="hide('popup1')">&times;</a>
+        <h2>Water Fountain</h2>
+        <form id="ratingForm">
+            <label for="rating">Rating:</label>
+            <label for="rating">4.3/5</label>
+            <br><br>
+            <!-- <input type="number" id="rating" name="rating" min="1" max="5" required><br><br> -->
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            <button type="submit" id="submitButton">Submit</button>
+          </form>
       </div>
-      <div class="popup" id="popup">
-        <div class="popup-content">
-          <a class="close" id="closePopup" href="#" onclick="hide('popup')">&times;</a>
-          <h2>Water Fountain</h2>
-          <form id="ratingForm">
-              <label for="rating">Rating:</label>
-              <label for="rating">4.3/5</label>
-              <br><br>
-              <!-- <input type="number" id="rating" name="rating" min="1" max="5" required><br><br> -->
-              <label for="description">Description:</label>
-              <textarea id="description" name="description" required></textarea>
-              <button type="submit" id="submitButton">Submit</button>
-            </form>
+      <div class="popup" id="popup2">
+        <a class="close" id="closePopup" href="#" onclick="hide('popup2')">&times;</a>
+        <h2>Water Fountain</h2>
+        <form id="ratingForm">
+            <label for="rating">Rating:</label>
+            <label for="rating">3.9/5</label>
+            <br><br>
+            <!-- <input type="number" id="rating" name="rating" min="1" max="5" required><br><br> -->
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            <button type="submit" id="submitButton">Submit</button>
+          </form>
+      </div>
+      <div class="popup" id="popup3">
+        <a class="close" id="closePopup" href="#" onclick="hide('popup3')">&times;</a>
+        <h2>Water Fountain</h2>
+        <form id="ratingForm">
+            <label for="rating">Rating:</label>
+            <label for="rating">2.7/5</label>
+            <br><br>
+            <!-- <input type="number" id="rating" name="rating" min="1" max="5" required><br><br> -->
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            <button type="submit" id="submitButton">Submit</button>
+          </form>
       </div>
     </div>
   </body>
