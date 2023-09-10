@@ -62,6 +62,9 @@
   
   /* Styling buttons & webpage */
   
+  head{
+    font-family: 'North Face', sans-serif;                    
+  }
   
   body {
     background: offwhite;
