@@ -67,7 +67,7 @@
   .button {
       margin-top: 50px;
       background-color: rgb(255, 255, 255);
-      border: 3px solid #000000;
+      border: 5px solid #000000;
       color: #F04A49;
       font-size: 20px;
       padding: 10px 5px;
@@ -124,8 +124,14 @@
     color: #ffffff;
     font-size: 25px;
     padding: 10px 20px;
-    
+    border-radius: 10px;
 }
+  .location-button:hover {
+    background-color: #a89e9ea1;
+    color: #FFF;
+    border: 3px solid #000000;
+    transition: all 0.3s ease 0s;
+  }
 
 #img-container {
     border: solid rgb(0, 0, 0) 3px;
