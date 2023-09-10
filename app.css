@@ -5,7 +5,9 @@
     margin-top: 50px;
     width: 40%;
     border: solid;
+    border-color: #822929; 
     border-width: 10px;
+    border-radius: 5%;
 }
 
 .center2 {
@@ -15,7 +17,9 @@
     margin-top: 50px;
     width: 40%;
     border: solid;
+    border-color: #822929;
     border-width: 10px;
+    border-radius: 5%;
 }
 
 .popup {
@@ -166,11 +170,16 @@
 .logo1 {
   width: 60%;
   height:60%;
+
 }
 
 .rev1 {
   width: 60%;
   height:60%;
+  border: solid;
+  border-color: #822929; 
+  border-width: 5px;
+  border-radius: 5%;
 }
 
 body {
