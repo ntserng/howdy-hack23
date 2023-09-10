@@ -14,7 +14,7 @@
   <body style="background-color:maroon;">
   </div>
   <div class="dropdown is-active dd">
-    <div class="dropdown-trigger">
+    <div class="dropdown-trigger" style = "position:fixed; left:0px; top:0px;">
       <button class="button" aria-haspopup="true" aria-controls="dropdown-menu2">
         <span>Locations</span>
         <span class="icon is-small">
@@ -22,7 +22,7 @@
         </span>
       </button>
     </div>
-    <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+    <div class="dropdown-menu" id="dropdown-menu2" role="menu" style = "position:fixed; left:0px; top:100px;">
       <div class="dropdown-content">
           <a href="index.html" class="dropdown-item">
             MSC Floor 1
@@ -41,7 +41,8 @@
       >
       </image>
       <div style = "position:fixed; left:400px; top:400px;">
-        <button class="button is-danger is-light is-outlined is-rounded" href="#" onclick="show('popup')">v</button>
+        <button class="button is-danger is-light is-outlined is-rounded" href="#" onclick="show('popup')"><image class="water" src="water.png"></image></button>
+          <!-- <image src="water.png"></image> -->
         <!-- This is what will be included inside the popup -->
         <div class="popup" id="popup">
           <p>Water Fountain</p>
