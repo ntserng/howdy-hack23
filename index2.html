@@ -39,31 +39,6 @@
       class="button"
       id="img-container"
       href="#"
-      onclick="show('popup4')"
-    >
-      <image class="water" src="water.png"></image>
-    </button>
-    <!-- <image src="water.png"></image> -->
-    <!-- This is what will be included inside the popup -->
-    <div class="popup" id="popup4">
-      <a class="close" id="closePopup" href="#" onclick="hide('popup4')">&times;</a>
-      <h2><b>Water Fountain 4</b></h2>
-      <form id="ratingForm">
-          <label for="rating">Rating:</label>
-          <label for="rating">2.3/5</label>
-          <br><br>
-          <!-- <input type="number" id="rating" name="rating" min="1" max="5" required><br><br> -->
-          <label for="description">Description:</label>
-          <textarea id="description" name="description" required></textarea>
-          <button type="submit" id="submitButton">Submit</button>
-        </form>
-    </div>
-  </div>
-  <div style="position: fixed; left: 51%; top: 23%">
-    <button
-      class="button"
-      id="img-container"
-      href="#"
       onclick="show('popup5')"
     >
       <image class="water" src="water.png"></image>
@@ -75,16 +50,63 @@
       <h2><b>Water Fountain 5</b></h2>
       <form id="ratingForm">
           <label for="rating">Rating:</label>
-          <label for="rating">3.3/5</label>
+          <label for="rating" id="displayed-rating5">Unrated</label>
           <br><br>
           <!-- <input type="number" id="rating" name="rating" min="1" max="5" required><br><br> -->
           <label for="description">Description:</label>
-          <textarea id="description" name="description" required></textarea>
-          <button type="submit" id="submitButton">Submit</button>
+          <textarea id="description5" name="description" required></textarea>
+          <button type="submit" id="submitButton5">Submit</button>
+        </form>
+    </div>
+  </div>
+  <div style="position: fixed; left: 51%; top: 23%">
+    <button
+      class="button"
+      id="img-container"
+      href="#"
+      onclick="show('popup6')"
+    >
+      <image class="water" src="water.png"></image>
+    </button>
+    <!-- <image src="water.png"></image> -->
+    <!-- This is what will be included inside the popup -->
+    <div class="popup" id="popup6">
+      <a class="close" id="closePopup" href="#" onclick="hide('popup6')">&times;</a>
+      <h2><b>Water Fountain 6</b></h2>
+      <form id="ratingForm">
+          <label for="rating">Rating:</label>
+          <label for="rating" id="displayed-rating6">Unrated</label>
+          <br><br>
+          <!-- <input type="number" id="rating" name="rating" min="1" max="5" required><br><br> -->
+          <label for="description">Description:</label>
+          <textarea id="description6" name="description" required></textarea>
+          <button type="submit" id="submitButton6">Submit</button>
         </form>
     </div>
   </div>
   <h3 style="color:white; font-family: serif; font-size: 300%; position: relative; top: 50px;">MSC Floor 2</h3>
+  <script>
+    const element5 = document.getElementById("submitButton5");
+    element5.addEventListener("click", changeRating5);
+
+    function changeRating5(event) {
+      const newRating = document.getElementById("description5").value;
+      document.getElementById("displayed-rating5").innerHTML = `${newRating}/5`
+      document.getElementById("description5").value = "";
+      event.preventDefault();
+    }
+  </script>
+  <script>
+    const element6 = document.getElementById("submitButton6");
+    element6.addEventListener("click", changeRating6);
+
+    function changeRating6(event) {
+      const newRating = document.getElementById("description6").value;
+      document.getElementById("displayed-rating6").innerHTML = `${newRating}/5`
+      document.getElementById("description6").value = "";
+      event.preventDefault();
+    }
+  </script>
 </body>
 </html>
 

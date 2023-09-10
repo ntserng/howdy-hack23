@@ -14,7 +14,6 @@
   <body>
     <div class="d-flex flex-column justify-content-center w-100 h-100"></div>
 
-
     <h1 style="color:white; font-family: serif; font-size: 300%; position: relative; top: 30px;">HOWDY HYDRATE</h1>
     <div class="dropdown" style="position: fixed; left: 110px; top: 80px">
       <button class="location-button">Locations</button>
@@ -75,6 +74,15 @@
       <!-- <image src="water.png"></image> -->
       <!-- This is what will be included inside the popup -->
     </div>
+    <div style="position: fixed; left: 38%; top: 17%">
+      <button
+        class="button"
+        id="button4"
+        href="#"
+        onclick="show('popup4')"
+      >
+        <image class="water" src="water.png"></image>
+      </button>
     <div>
     <div>
       
@@ -85,12 +93,12 @@
         <h2><b>Water Fountain 1</b></h2>
         <form id="ratingForm">
             <label for="rating">Rating:</label>
-            <label for="rating">4.3/5</label>
+            <label for="rating" id="displayed-rating1">Unrated</label>
             <br><br>
             <!-- <input type="number" id="rating" name="rating" min="1" max="5" required><br><br> -->
             <label for="description">Rate:</label>
-            <textarea id="description" name="description" required></textarea>
-            <button type="submit" id="submitButton">Submit</button>
+            <textarea id="description1" name="description" required></textarea>
+            <button type="submit" id="submitButton1">Submit</button>
           </form>
       </div>
       <div class="popup" id="popup2">
@@ -98,12 +106,12 @@
         <h2><b>Water Fountain 2</b></h2>
         <form id="ratingForm">
             <label for="rating">Rating:</label>
-            <label for="rating">3.9/5</label>
+            <label for="rating" id="displayed-rating2">Unrated</label>
             <br><br>
             <!-- <input type="number" id="rating" name="rating" min="1" max="5" required><br><br> -->
             <label for="description">Rate:</label>
-            <textarea id="description" name="description" required></textarea>
-            <button type="submit" id="submitButton">Submit</button>
+            <textarea id="description2" name="description" required></textarea>
+            <button type="submit" id="submitButton2">Submit</button>
           </form>
       </div>
       <div class="popup" id="popup3">
@@ -111,16 +119,73 @@
         <h2><b>Water Fountain 3</b></h2>
         <form id="ratingForm">
             <label for="rating">Rating:</label>
-            <label for="rating">2.7/5</label>
+            <label for="rating" id="displayed-rating3">Unrated</label>
             <br><br>
             <!-- <input type="number" id="rating" name="rating" min="1" max="5" required><br><br> -->
             <label for="description">Rate:</label>
-            <textarea id="description" name="description" required></textarea>
-            <button type="submit" id="submitButton">Submit</button>
+            <textarea id="description3" name="description" required></textarea>
+            <button type="submit" id="submitButton3">Submit</button>
+          </form>
+      </div>
+      <div class="popup" id="popup4">
+        <a class="close" id="closePopup" href="#" onclick="hide('popup4')">&times;</a>
+        <h2><b>Water Fountain 4</b></h2>
+        <form id="ratingForm">
+            <label for="rating">Rating:</label>
+            <label for="rating" id="displayed-rating4">Unrated</label>
+            <br><br>
+            <!-- <input type="number" id="rating" name="rating" min="1" max="5" required><br><br> -->
+            <label for="description">Rate:</label>
+            <textarea id="description4" name="description" required></textarea>
+            <button type="submit" id="submitButton4">Submit</button>
           </form>
       </div>
     </div>
-    <h3 style="color:white; font-family: serif; font-size: 300%; position: relative; top: 50px;">MSC Floor 1</h3>
+    <h3 style="color:white; font-family: serif; font-size: 300%; position: fixed; top: 80%; left: 43%;">MSC Floor 1</h3>
+    <script>
+      const element1 = document.getElementById("submitButton1");
+      element1.addEventListener("click", changeRating1);
+
+      function changeRating1(event) {
+        const newRating = document.getElementById("description1").value;
+        document.getElementById("displayed-rating1").innerHTML = `${newRating}/5`
+        document.getElementById("description1").value = "";
+        event.preventDefault();
+      }
+    </script>
+    <script>
+      const element2 = document.getElementById("submitButton2");
+      element2.addEventListener("click", changeRating2);
+
+      function changeRating2(event) {
+        const newRating = document.getElementById("description2").value;
+        document.getElementById("displayed-rating2").innerHTML = `${newRating}/5`
+        document.getElementById("description2").value = "";
+        event.preventDefault();
+      }
+    </script>
+    <script>
+      const element3 = document.getElementById("submitButton3");
+      element3.addEventListener("click", changeRating3);
+
+      function changeRating3(event) {
+        const newRating = document.getElementById("description3").value;
+        document.getElementById("displayed-rating3").innerHTML = `${newRating}/5`
+        document.getElementById("description3").value = "";
+        event.preventDefault();
+      }
+    </script>
+    <script>
+      const element4 = document.getElementById("submitButton4");
+      element4.addEventListener("click", changeRating4);
+
+      function changeRating4(event) {
+        const newRating = document.getElementById("description4").value;
+        document.getElementById("displayed-rating4").innerHTML = `${newRating}/5`
+        document.getElementById("description4").value = "";
+        event.preventDefault();
+      }
+    </script>
   </body>
 </html>
 
