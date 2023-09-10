@@ -1,2 +1,2 @@
 # howdy-hack23
-HowdyHydrate
+HowdyHydrate is a website that solves the problem of College Station's funky tasting water.
