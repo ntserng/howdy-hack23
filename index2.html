@@ -24,16 +24,54 @@
       class="center2"
     >
     </image>
-    <div style="position: fixed; left: 60%; top: 30%">
-      <button class="button" href="#" onclick="show('popup')">
+    <div style="position: fixed; left: 50%; top: 67%">
+      <button
+        class="button"
+        id="img-container"
+        href="#"
+        onclick="show('popup4')"
+      >
         <image class="water" src="water.png"></image>
       </button>
       <!-- <image src="water.png"></image> -->
       <!-- This is what will be included inside the popup -->
-      <div class="popup" id="popup">
-        <p>Water Fountain</p>
-        <p>This fountain is <b>2.5/5.0</b></p>
-        <a href="#" onclick="hide('popup')">Close</a>
+      <div class="popup" id="popup4">
+        <a class="close" id="closePopup" href="#" onclick="hide('popup4')">&times;</a>
+        <h2>Water Fountain 4</h2>
+        <form id="ratingForm">
+            <label for="rating">Rating:</label>
+            <label for="rating">2.3/5</label>
+            <br><br>
+            <!-- <input type="number" id="rating" name="rating" min="1" max="5" required><br><br> -->
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            <button type="submit" id="submitButton">Submit</button>
+          </form>
+      </div>
+    </div>
+    <div style="position: fixed; left: 34%; top: 33%">
+      <button
+        class="button"
+        id="img-container"
+        href="#"
+        onclick="show('popup5')"
+      >
+        <image class="water" src="water.png"></image>
+      </button>
+      <!-- <image src="water.png"></image> -->
+      <!-- This is what will be included inside the popup -->
+      <div class="popup" id="popup5">
+        <a class="close" id="closePopup" href="#" onclick="hide('popup5')">&times;</a>
+        <h2>Water Fountain 5</h2>
+        <form id="ratingForm">
+            <label for="rating">Rating:</label>
+            <label for="rating">3.3/5</label>
+            <br><br>
+            <!-- <input type="number" id="rating" name="rating" min="1" max="5" required><br><br> -->
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" required></textarea>
+            <button type="submit" id="submitButton">Submit</button>
+          </form>
       </div>
     </div>
   </body>
