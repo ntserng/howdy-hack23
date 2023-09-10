@@ -87,10 +87,10 @@
     font-size: 16px;
   }
 
-.water {
-    width: 30px;
-    height:30px;
-  }
+  .water {
+      width: 30px;
+      height:30px;
+    }
 
   .dropdown {
     display: inline-block;
@@ -161,4 +161,14 @@
     top: 10px;
     right: 10px;
     cursor: pointer;
+}
+
+.logo1 {
+  width: 60%;
+  height:60%;
+}
+
+.rev1 {
+  width: 60%;
+  height:60%;
 }
